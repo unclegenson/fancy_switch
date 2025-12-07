@@ -2,10 +2,10 @@
 
 All notable changes to the Fancy Switch package will be documented in this file.
 
-## [1.0.0] - 2024-01-XX
+## [1.0.0+1] - 2024-01-XX
 
-### 🎉 Initial Release
-**Created by UncleGenSon**
+### 🎉 Initial Public Release
+**Published by UncleGenSon**
 
 #### ✨ Features
 - 🎨 Beautiful gradient animations with smooth transitions
@@ -34,6 +34,14 @@ All notable changes to the Fancy Switch package will be documented in this file.
 - Efficient widget tree
 - Minimal rebuilds for optimal performance
 - Clean and maintainable codebase
+
+#### 📦 Package Info
+- **Version**: 1.0.0+1
+- **Flutter**: >=3.10.0
+- **Dart**: >=3.0.0
+- **License**: MIT
+- **Author**: UncleGenSon
+- **Email**: unclegenson@gmail.com
 
 ## [0.1.0] - 2024-01-XX
 
