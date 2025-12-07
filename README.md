@@ -330,3 +330,8 @@ You for using Fancy Switch! 🎉
 
 Love this package? Give it a ⭐ on GitHub and help spread the word!
 
+<div align="center">
+Made with ❤️ by UncleGenSon for the Flutter community
+Ready to elevate your Flutter app? Install Fancy Switch today and create toggle switches that users will love to interact with! 🚀
+
+</div> ```
