@@ -1,4 +1,19 @@
 include: package:flutter_lints/flutter.yaml
 
-# Additional information about this file can be found at
-# https://dart.dev/guides/language/analysis-options
+# Additional linting rules can be added here
+linter:
+  rules:
+    # Avoid print calls in production code
+    avoid_print: true
+    
+    # Prefer const with constant constructors
+    prefer_const_constructors: true
+    
+    # Use ; in places where they are required
+    always_use_package_imports: false
+    
+    # Prefer single quotes where applicable
+    prefer_single_quotes: true
+    
+    # Prefer using if null operators
+    prefer_if_null_operators: true
