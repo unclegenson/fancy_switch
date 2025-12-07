@@ -1,13 +1,14 @@
 # 🎨 Fancy Switch
 
 [![pub package](https://img.shields.io/pub/v/fancy_switch.svg)](https://pub.dev/packages/fancy_switch)
-[![Flutter Favorite](https://img.shields.io/badge/Flutter-Favorite-blue)](https://flutter.dev/docs/development/packages-and-plugins/favorites)
 [![likes](https://img.shields.io/pub/likes/fancy_switch)](https://pub.dev/packages/fancy_switch/score)
 [![points](https://img.shields.io/pub/points/fancy_switch)](https://pub.dev/packages/fancy_switch/score)
 [![popularity](https://img.shields.io/pub/popularity/fancy_switch)](https://pub.dev/packages/fancy_switch/score)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub stars](https://img.shields.io/github/stars/unclegenson/fancy_switch)](https://github.com/unclegenson/fancy_switch/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/unclegenson/fancy_switch)](https://github.com/unclegenson/fancy_switch/network)
 
-**Transform your Flutter apps with beautifully animated, fully customizable toggle switches that delight users.**
+**Transform your Flutter apps with beautifully animated, fully customizable toggle switches created by UncleGenSon!**
 
 ---
 
@@ -33,11 +34,8 @@ Add to your `pubspec.yaml`:
 dependencies:
   fancy_switch: ^1.0.0
   flutter_svg: ^2.0.0+1  # Optional, for SVG support
-```
-
-### 2. Basic Usage
-
-```dart
+2. Basic Usage
+dart
 import 'package:fancy_switch/fancy_switch.dart';
 
 bool isEnabled = false;
@@ -50,16 +48,11 @@ FancySwitch(
   activeColors: [Colors.green, Colors.lightGreen],
   inactiveColors: [Colors.grey, Colors.blueGrey],
 )
-```
-
----
-
-## 🎨 Features
-
-### 🌈 Gradient Colors
+🎨 Features
+🌈 Gradient Colors
 Customize both active and inactive states with beautiful gradients:
 
-```dart
+dart
 FancySwitch(
   value: isDarkMode,
   onChanged: (v) => setState(() => isDarkMode = v),
@@ -74,12 +67,10 @@ FancySwitch(
     Color(0xFFE67E22),
   ],
 )
-```
-
-### 🖼️ Icon & SVG Support
+🖼️ Icon & SVG Support
 Use Material Icons, custom icons, or SVG files:
 
-```dart
+dart
 // Using IconData
 FancySwitch(
   activeIcon: Icons.wifi,
@@ -91,12 +82,10 @@ FancySwitch(
   activeIcon: 'assets/icons/moon.svg',
   inactiveIcon: 'assets/icons/sun.svg',
 )
-```
-
-### 📐 Complete Customization
+📐 Complete Customization
 Control every aspect of the switch:
 
-```dart
+dart
 FancySwitch(
   value: value,
   onChanged: onChanged,
@@ -116,15 +105,9 @@ FancySwitch(
   activeColors: [Colors.purple, Colors.deepPurple],
   inactiveColors: [Colors.blueGrey, Colors.grey],
 )
-```
-
----
-
-## 📱 Examples
-
-### Real-World Usage Examples
-
-```dart
+📱 Examples
+Real-World Usage Examples
+dart
 // Dark Mode Toggle
 FancySwitch(
   value: darkMode,
@@ -156,12 +139,10 @@ FancySwitch(
   activeColors: [Color(0xFFE74C3C), Color(0xFFC0392B)],
   inactiveColors: [Color(0xFF3498DB), Color(0xFF2980B9)],
 )
-```
-
-### Custom Settings Grid
+Custom Settings Grid
 Create beautiful settings panels:
 
-```dart
+dart
 GridView.count(
   crossAxisCount: 2,
   children: [
@@ -180,37 +161,25 @@ GridView.count(
     // ... more switches
   ],
 )
-```
-
----
-
-## ⚙️ API Reference
-
-### Properties
-
-| Property | Type | Default | Description |
-|----------|------|---------|-------------|
-| `value` | `bool` | **Required** | Current switch state |
-| `onChanged` | `ValueChanged<bool>` | **Required** | Callback when state changes |
-| `activeIcon` | `dynamic` | **Required** | Icon for active state (IconData or SVG path) |
-| `inactiveIcon` | `dynamic` | **Required** | Icon for inactive state (IconData or SVG path) |
-| `activeColors` | `List<Color>` | `[#27AE60, #2ECC71]` | Gradient colors for active state |
-| `inactiveColors` | `List<Color>` | `[#95A5A6, #7F8C8D]` | Gradient colors for inactive state |
-| `width` | `double` | `70` | Total width of the switch |
-| `height` | `double` | `36` | Total height of the switch |
-| `iconSize` | `double` | `20` | Size of icons |
-| `duration` | `Duration` | `400ms` | Animation duration |
-| `circlePadding` | `double` | `6` | Internal padding of the white circle |
-| `circleMargin` | `double` | `4` | Margin from edges |
-| `circleSizeRatio` | `double` | `0.7` | Circle size relative to height |
-
----
-
-## 🎯 Advanced Usage
-
-### Creating a Theme-Aware Switch
-
-```dart
+⚙️ API Reference
+Properties
+Property	Type	Required	Default	Description
+value	bool	✅	-	Current switch state
+onChanged	ValueChanged<bool>	✅	-	Callback when state changes
+activeIcon	dynamic	✅	-	Icon for active state (IconData or SVG path)
+inactiveIcon	dynamic	✅	-	Icon for inactive state (IconData or SVG path)
+activeColors	List<Color>	❌	[#27AE60, #2ECC71]	Gradient colors for active state
+inactiveColors	List<Color>	❌	[#95A5A6, #7F8C8D]	Gradient colors for inactive state
+width	double	❌	70	Total width of the switch
+height	double	❌	36	Total height of the switch
+iconSize	double	❌	20	Size of icons
+duration	Duration	❌	400ms	Animation duration
+circlePadding	double	❌	6	Internal padding of the white circle
+circleMargin	double	❌	4	Margin from edges
+circleSizeRatio	double	❌	0.7	Circle size relative to height
+🎯 Advanced Usage
+Creating a Theme-Aware Switch
+dart
 class ThemeSwitch extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -234,11 +203,8 @@ class ThemeSwitch extends StatelessWidget {
     );
   }
 }
-```
-
-### Building a Custom Switch with SVG
-
-```dart
+Building a Custom Switch with SVG
+dart
 FancySwitch(
   value: isPremium,
   onChanged: (v) => setState(() => isPremium = v),
@@ -256,25 +222,23 @@ FancySwitch(
   height: 45,
   iconSize: 22,
 )
-```
-
----
-
-## 🤝 Contributing
-
+🤝 Contributing
 We love contributions! Here's how you can help:
 
-1. **Fork** the repository
-2. **Create** a feature branch: `git checkout -b feature/amazing-feature`
-3. **Commit** your changes: `git commit -m 'Add amazing feature'`
-4. **Push** to the branch: `git push origin feature/amazing-feature`
-5. **Open** a Pull Request
+Fork the repository
 
-### Development Setup
+Create a feature branch: git checkout -b feature/amazing-feature
 
-```bash
+Commit your changes: git commit -m 'Add amazing feature'
+
+Push to the branch: git push origin feature/amazing-feature
+
+Open a Pull Request
+
+Development Setup
+bash
 # Clone the repository
-git clone https://github.com/yourusername/fancy_switch.git
+git clone https://github.com/unclegenson/fancy_switch.git
 
 # Install dependencies
 flutter pub get
@@ -282,55 +246,50 @@ flutter pub get
 # Run the example app
 cd example
 flutter run
-```
+📖 FAQ
+❓ Can I use custom SVG animations?
+Yes! Fancy Switch supports any SVG that works with the flutter_svg package.
 
----
+❓ How do I change the animation curve?
+Currently, the package uses Curves.easeInOut. For custom curves, feel free to submit a PR or fork the repository.
 
-## 📖 FAQ
+❓ Is there RTL support?
+Yes! Fancy Switch automatically respects the Directionality of your app.
 
-### ❓ Can I use custom SVG animations?
-Yes! Fancy Switch supports any SVG that works with the `flutter_svg` package.
-
-### ❓ How do I change the animation curve?
-Currently, the package uses `Curves.easeInOut`. For custom curves, feel free to submit a PR or fork the repository.
-
-### ❓ Is there RTL support?
-Yes! Fancy Switch automatically respects the `Directionality` of your app.
-
-### ❓ Can I use emojis instead of icons?
+❓ Can I use emojis instead of icons?
 While not directly supported, you can use SVG versions of emojis or create a custom widget.
 
----
-
-## 📊 Performance
-
+📊 Performance
 Fancy Switch is optimized for performance:
-- ✅ **60 FPS animations** on modern devices
-- ✅ **Minimal widget rebuilds**
-- ✅ **Efficient painting operations**
-- ✅ **Zero unnecessary state changes**
 
----
+✅ 60 FPS animations on modern devices
 
-## 🌟 Showcase
+✅ Minimal widget rebuilds
 
-**Used by thousands of apps including:**
-- Productivity apps
-- Social media platforms
-- E-commerce applications
-- Utility tools
-- And many more!
+✅ Efficient painting operations
 
-**Share your creation!** Tag us on Twitter [@YourHandle] or submit a PR to add your app to our showcase.
+✅ Zero unnecessary state changes
 
----
+🌟 Showcase
+Used by thousands of apps including:
 
-## 📄 License
+Productivity apps
 
-```
+Social media platforms
+
+E-commerce applications
+
+Utility tools
+
+And many more!
+
+Share your creation! Tag us on Telegram [@unclegenson] or submit a PR to add your app to our showcase.
+
+📄 License
+text
 MIT License
 
-Copyright (c) 2024 Your Name
+Copyright (c) 2024 UncleGenSon
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -349,39 +308,25 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-```
+🙏 Acknowledgments
+Flutter Team for the amazing framework
 
----
+flutter_svg package for SVG support
 
-## 🙏 Acknowledgments
+All contributors who helped shape this package
 
-- **Flutter Team** for the amazing framework
-- **flutter_svg** package for SVG support
-- **All contributors** who helped shape this package
-- **You** for using Fancy Switch! 🎉
+You for using Fancy Switch! 🎉
 
----
+📞 Support
+👨‍💻 Author: UncleGenSon
 
-## 📞 Support
+📧 Email: unclegenson@gmail.com
 
-- 📧 **Email**: your.email@example.com
-- 🐦 **Twitter**: [@YourHandle](https://twitter.com/YourHandle)
-- 💬 **Discord**: [Join our community](https://discord.gg/your-invite)
-- 🐛 **Issues**: [GitHub Issues](https://github.com/yourusername/fancy_switch/issues)
+📱 Telegram: @unclegenson
 
-**Love this package?** Give it a ⭐ on [GitHub](https://github.com/yourusername/fancy_switch) and help spread the word!
+🐙 GitHub: unclegenson
 
----
+🐛 Issues: GitHub Issues
 
-<div align="center">
+Love this package? Give it a ⭐ on GitHub and help spread the word!
 
-### Made with ❤️ for the Flutter community
-
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Support-yellow.svg)](https://buymeacoffee.com/yourname)
-[![Sponsor](https://img.shields.io/badge/Sponsor-GitHub-blue.svg)](https://github.com/sponsors/yourname)
-
-</div>
-
----
-
-**Ready to elevate your Flutter app?** Install Fancy Switch today and create toggle switches that users will love to interact with! 🚀

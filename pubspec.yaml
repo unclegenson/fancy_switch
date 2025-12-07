@@ -1,11 +1,10 @@
 name: fancy_switch
-description: A customizable fancy animated switch with support for icons and SVGs.
-version: 0.0.1
-
-homepage: https://github.com/YOUR_GITHUB/fancy_switch
-repository: https://github.com/YOUR_GITHUB/fancy_switch
-issue_tracker: https://github.com/YOUR_GITHUB/fancy_switch/issues
-maintainer: Mohammad Mahdi <YOUR_EMAIL>
+description: A beautiful, customizable, animated Flutter switch with support for IconData and SVGs. Perfect for adding smooth, modern toggle buttons to your app.
+version: 1.0.0+1
+homepage: https://github.com/unclegenson/fancy_switch
+repository: https://github.com/unclegenson/fancy_switch.git
+issue_tracker: https://github.com/unclegenson/fancy_switch/issues
+maintainer: UncleGenSon <unclegenson@gmail.com>
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
@@ -23,3 +22,5 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+publish_to: 'https://pub.dev'
