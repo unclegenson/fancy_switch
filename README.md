@@ -34,6 +34,7 @@ Add to your `pubspec.yaml`:
 dependencies:
   fancy_switch: ^1.0.0
   flutter_svg: ^2.0.0+1  # Optional, for SVG support
+```
 2. Basic Usage
 dart
 import 'package:fancy_switch/fancy_switch.dart';
